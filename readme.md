@@ -1,8 +1,10 @@
 # servo-tuner
 
-A simple command line utility to help find the ideal pwm range for a servo using nodejs and an Arduino. The ideal PWM range for a servo varies by manufacturer and the default PWM range varies by library and micro controller. This tool will help you find which PWM range is best for your servo.
-
 Calibrating your servo and fine tuning the PWM range is critical for projects that use inverse kinematics or require exact positioning.
+
+The ideal PWM range for a servo varies by manufacturer and the default PWM range varies by library and micro controller. 
+
+This tool will help you find which PWM range is best for your servo.
 
 ## Installation
 
