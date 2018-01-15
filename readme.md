@@ -1,6 +1,6 @@
 # servo-tuner
 
-A simple command line utility to help find the ideal pwm range for a servo using nodejs and an Arduino. The ideal PWM range for a servo varies by manufacturer and the default PWM range varies by library and micro controller. This tool will help you which PWM range is best for your servo.
+A simple command line utility to help find the ideal pwm range for a servo using nodejs and an Arduino. The ideal PWM range for a servo varies by manufacturer and the default PWM range varies by library and micro controller. This tool will help you find which PWM range is best for your servo.
 
 Calibrating your servo and fine tuning the PWM range is critical for projects that use inverse kinematics or require exact positioning.
 
@@ -58,15 +58,15 @@ The servo will start at the midpoint. Move it to the minimum value by pressing `
 
 Press ```shift + z``` to reduce the lower limit of the PWM range in increments of 10. Do this until the servo stops responding or the servo begins to behave in an unexpected manner (i.e. it moves further than it should, or starts slowly panning). Move it back the other way by pressing ```shift + c``` until it begins to behave as it should.
 
-Now do the same using just ```z``` and ```c``` to adjust the low end of the PWM range in increments of 1 find the exact limit.
+Now do the same using just ```z``` and ```c``` to adjust the low end of the PWM range in increments of 1 to find the exact limit.
 
 ### Find the Upper Limit of the PWM Range
-Move the servo to its maximum value by pressint ```opt + right```.
+Move the servo to its maximum value by pressing ```opt + right```.
 
-Repeat the incrmental trial and error process using ```shift + e```, ```shift + q```, ```e```, and ```q```.
+Repeat the incremental trial and error process using ```shift + e```, ```shift + q```, ```e```, and ```q```.
 
 ### Test It
-Use ```opt + left```, ```up```, and ```opt.right``` to test the range of the servo. This is ideally done with a servo protractor. If you are getting more than the expected range on your servo you can fine tune the PWM range. If on the other hand you are still getting less than the expected range you probably just have a crappy servo.
+Use ```opt + left```, ```up```, and ```opt + right``` to test the range of the servo. This is ideally done with a servo protractor. If you are getting more than the expected range on your servo you can fine tune the PWM range. If on the other hand you are still getting less than the expected range you probably just have a crappy servo.
 
 ### Using What You've Learned
 
